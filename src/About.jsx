@@ -9,7 +9,7 @@ function About(){
     return<div style={{
         display:"flex",
     }}>
-        <DetailsBloc title="What's GameFest ?" text="GameFest is an annual game development hackathon, hosted by GDG algiers (in collaboration with WTM algiers).
+        <DetailsBloc title="What's GameFest ?" fullwidth="600" textwidth="500" text="GameFest is an annual game development hackathon, hosted by GDG algiers (in collaboration with WTM algiers).
 Throughout the 3 days of the hackathon, Participants who came from different corners on the national scope, will explore the excellent experience of working hardly and efficiently in teams in order to improveme in their development performance." />
         <img src={img} alt="" style={{
             height:"200px",

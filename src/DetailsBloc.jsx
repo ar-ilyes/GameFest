@@ -16,8 +16,19 @@ function DetailsBloc(props) {
     if (!end) {
     typeWriter();
     }
+    let textwidth=props.textwidth + "px";
+    let fullwidth=props.fullwidth + "px";
     return <div>
-        <div className="detailsBloc">
+        <div style={{
+            height: "450px",
+            width: fullwidth,
+            backgroundColor: "#FFC500",
+            opacity: "0.8",
+            margin: "-20px 80px",
+            borderRadius:"30px" ,
+            fontFamily:"'Bungee Inline', cursive" ,
+            position: "relative",
+        }}>
             <p style={{
                 fontSize: "30px",
                 color: "#000083",
@@ -25,8 +36,8 @@ function DetailsBloc(props) {
             }}>{props.title}</p>
             <p
             style={{
-                width:"500px",
-                margin:"20px 50px"
+                width:textwidth,
+                margin:"10px 30px"
             }}
             >{show}</p>
         </div>

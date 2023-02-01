@@ -4,7 +4,10 @@ body {
   font-family: 'Bungee Inline', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: skyblue;
+  background: rgb(23,190,235);
+  background: linear-gradient(176deg, rgba(23,190,235,1) 26%, rgba(29,220,239,1) 57%, rgba(39,231,232,1) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   overflow: hidden;
 
 }
@@ -413,7 +416,7 @@ img{
   top:0.7em;
   color: #000083;
 }
-.detailsBloc{
+/* .detailsBloc{
   height: 450px;
   width:600px;
   background-color: #FFC500;
@@ -421,7 +424,8 @@ img{
   margin: -20px 80px;
   border-radius:30px ;
   font-family:'Bungee Inline', cursive ;
-}
+  position: relative;
+} */
 .gamefestdetails{
   animation: float 3s infinite both;
 }
