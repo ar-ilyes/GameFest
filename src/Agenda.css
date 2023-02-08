@@ -1,0 +1,76 @@
+/**general css for the bloc**/
+.day-bloc{
+    height: 500px;
+    width: 850px;
+    background-color: #FFC500;
+    opacity: 0.8;
+    border-radius:30px ;
+    font-family:'Bungee Inline';
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+.content-bloc{
+    font-size: 30px;
+    color: #000083;
+    text-decoration: underline;
+}
+/**for the navigation buttons, left and right**/
+.nav-btn{
+    font-size: 45px;
+    background-color: transparent;
+    border: none;
+    color:  #000083;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 0.5em 1em;
+}
+.left{
+    position: absolute;
+    top: 50%;
+    left: 103px;
+}
+.right{
+    position: absolute;
+    top: 50%;
+    right: 103px;
+}
+/****/
+.list-container{
+    width: 100%;
+}
+.agenda-list{
+    box-sizing: border-box;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 3px 10px 70px 5px;
+    padding: 0;
+}
+.agenda-item {
+    transition: all 0.2s ease-in-out;
+    color: #000083;
+    font-size: 20px;
+  }
+.agenda p {
+    flex-basis: 30%;
+    margin: 10px;
+    text-align: left;
+}
+.item {
+    display: inline-block;
+    justify-content: space-between;
+}
+.time-item{
+    width: 30%;
+    float: left;
+}
+.title-item{
+    width: 70%;
+    display: flex;
+}

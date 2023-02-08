@@ -51,9 +51,9 @@ img{
 
 .grass{
   position: absolute;
-  top: 465px;
-  right:50px;
-  transform:scale(8,4);
+  top: 600px;
+  right:30px;
+  transform:scale(9,5);
   width: 100%;
   z-index: -2;
 }

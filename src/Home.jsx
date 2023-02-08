@@ -1,6 +1,5 @@
 import img from "./images/sds.png"
 import { motion } from "framer-motion"
-import Lottie from 'react-lottie';
 import animationData from './lotties/mario';
 import Characters from "./Characters";
 /* import diamond from "./images/diamond.svg"
@@ -49,4 +48,4 @@ function Home(){
     <Characters/>
     </div>
 }
-export default Home
+export default Home;

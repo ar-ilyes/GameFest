@@ -1,4 +1,5 @@
 import './App.css';
+import './index.css';
 import { BrowserRouter as Router,Route, Routes  } from 'react-router-dom';
 import Navbar from './Navbar';
 import Home from './Home';
@@ -9,6 +10,7 @@ import lamppost from "./images/zyro-image_lamp.png"
 import tree from "./images/zyro-image.png"
 import About from './About';
 import Club from './Club';
+import Agenda from './Agenda';
 function App() {
   return (
     <Router>
@@ -22,6 +24,7 @@ function App() {
       <Route exact path="/spline" element={<Playdate/>}/>
       <Route exact path="/about" element={<About/>}/>
       <Route exact path="/club" element={<Club/>}/>
+      <Route exact path="/agenda" element={<Agenda/>}/>
       </Routes>
       <img src={lamppost} alt="" style={{height:"200px",position:"absolute",bottom:"25px",right:"50px",zIndex:"-1"}} />
     <img src={tree} alt="" style={{height:"450px",position:"absolute",bottom:"-7em",left:"-4em", zIndex:"-1"}} />
