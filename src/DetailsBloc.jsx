@@ -16,30 +16,12 @@ function DetailsBloc(props) {
     if (!end) {
     typeWriter();
     }
-    let textwidth=props.textwidth + "px";
-    let fullwidth=props.fullwidth + "px";
+    let classnom1="detailsbloc"+props.class;
+    let classnom2="detailsblocp"+props.class;
     return <div>
-        <div style={{
-            height: "450px",
-            width: fullwidth,
-            backgroundColor: "#FFC500",
-            opacity: "0.8",
-            margin: "-20px 80px",
-            borderRadius:"30px" ,
-            fontFamily:"'Bungee Inline', cursive" ,
-            position: "relative",
-        }}>
-            <p style={{
-                fontSize: "30px",
-                color: "#000083",
-                textDecoration:"underline"
-            }}>{props.title}</p>
-            <p
-            style={{
-                width:textwidth,
-                margin:"10px 30px"
-            }}
-            >{show}</p>
+        <div className={`detailsbloc + ${classnom1}`} >
+            <p className="detailsbloctitle">{props.title}</p>
+            <p className={classnom2}>{show}</p>
         </div>
     </div>
 }

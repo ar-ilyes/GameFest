@@ -1,21 +1,20 @@
 import img from "./images/sds.png"
 import { motion } from "framer-motion"
-import Lottie from 'react-lottie';
-import animationData from './lotties/mario';
+// import animationData from './lotties/mario';
 import Characters from "./Characters";
 /* import diamond from "./images/diamond.svg"
 import thunder from "./images/thunder.svg"
 import star from "./images/star.svg"
 import sword from "./images/sword.svg" */
 function Home(){
-    const defaultOptions = {
-        loop: true,
-        autoplay: true,
-        animationData: animationData,
-        rendererSettings: {
-        preserveAspectRatio: "xMidYMid slice"
-        }
-    };
+    // const defaultOptions = {
+    //     loop: true,
+    //     autoplay: true,
+    //     animationData: animationData,
+    //     rendererSettings: {
+    //     preserveAspectRatio: "xMidYMid slice"
+    //     }
+    // };
         return<div> 
         <motion.div
         className="box"

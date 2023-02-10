@@ -40,18 +40,37 @@ nav, .link {
   transition:2s;
   font-size:2;
 }
+.link2 {
+  z-index: 1;
+  list-style-type: none;
+  margin: 2em;
+  /*   margin-left:1em; */
+  display: flex;
+  gap: 10em;
+  color:#000083;
+  justify-content: space-around;
+  text-decoration: none;
+  transition:2s;
+  font-size:22px;
+}
 .link:hover{
   transform: scale(1.2);
   text-decoration: underline;
 }
+.link2:hover{
+  transform: scale(1.2);
+  text-decoration: underline;
+}
+.menu{
+  display: none;
+}
 img{
   height: 180px; 
 }
-/*/////////////////////////////////////////////////*/
 
 .grass{
   position: absolute;
-  top: 465px;
+  bottom: -50px;
   right:50px;
   transform:scale(8,4);
   width: 100%;
@@ -107,7 +126,49 @@ img{
   position: relative;
   right:50px;
 }
+.lamppost{
+  height:200px;
+  position:absolute;
+  bottom:25px;
+  right:50px;
+  z-index:-1;
+}
+.tree{
+  height:450px;
+  position:absolute;
+  bottom:-7em;
+  left:-4em;
+  z-index:-1;
+}
 
+@media only screen and (max-width: 1000px){
+  
+.gamefest{
+  height: 200px;
+  margin-top: 150px;
+}
+.tree{
+  height: 400px;
+  position: fixed;
+  bottom: -6em;
+  left: -7em;
+}
+.lamppost{
+  bottom: 1.7em;
+  position: fixed;
+}
+.menu{
+  display: inline;
+  height:2em;
+  margin: 1em;
+}
+ul{
+  display: none;
+}
+nav,.link{
+  gap: 5em;
+}
+}
 
 /*// ELEMENTS TO ANIMATE //*/
 .mario{
@@ -343,6 +404,27 @@ img{
   animation-delay: 17s;
   animation-fill-mode: both;
   animation-iteration-count: 1 ;}
+  .pacman{
+    animation-name: move;
+    animation-duration: 10s;
+    animation-fill-mode: both;
+    animation-delay: 5.3s;
+    animation-iteration-count: infinite ;
+  }
+  .pacghost{
+    animation-name: move;
+    animation-duration: 10s;
+    animation-fill-mode: both;
+    animation-direction: reverse;
+    animation-iteration-count: infinite ;
+  }
+  .pokemon{
+    animation-name: move;
+    animation-duration: 10s;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+    animation-iteration-count: infinite ;
+  }
 /*// KEYFRAMES //*/
 
 @keyframes move{
@@ -399,6 +481,23 @@ img{
     transform-origin: 49% 49%;
 	}
 }
+@keyframes rotate2 {
+	0% {
+    bottom: 100px;
+		transform: rotate(-20deg);
+    transform-origin: 49% 49%;
+	}
+	50% {
+		transform: rotate(20deg);
+    bottom: 120px;
+    transform-origin: 49% 49%;
+	}
+	100% {
+		transform: rotate(-20deg);
+    bottom: 100px;
+    transform-origin: 49% 49%;
+	}
+}
 .button {
   width: 170px;
   height: 80px;
@@ -426,8 +525,56 @@ img{
   font-family:'Bungee Inline', cursive ;
   position: relative;
 } */
+
+.detailsbloc{
+  height: 450px;
+  background-color: #FFC500;
+  opacity: 0.8;
+  margin: -20px 80px;
+  border-radius:30px;
+  font-family:'Bungee Inline', cursive;
+  position: relative;
+}
+.aboutdiv{
+  display: flex;
+}
+.detailsblocabout{
+  width: 600px;
+}
+.detailsblocpabout{
+  width:500px;
+  margin:10px 30px;
+}
+.detailsblocclub{
+  width: 500px;
+}
+.detailsblocpclub{
+  width:400px;
+  margin:10px 30px;
+}
+.detailsbloctitle{
+  font-size:30px;
+  color: #000083;
+  text-decoration:underline;
+}
+
+.dash{
+  position:absolute;
+  bottom:25px;
+  height:100px;
+  right:160px;
+}
+.flame{
+  position:absolute;
+  bottom:20px;
+  height:110px;
+  right:300px;
+}
+
 .gamefestdetails{
   animation: float 3s infinite both;
+  height:200px;
+  margin-top:110px;
 }
 .diamond{
   animation: float 2s infinite both;
@@ -442,11 +589,214 @@ img{
   animation: float 3s infinite both;
 }
 .octocat{
-  animation :move 20s infinite both;
+  animation :move 18s infinite both;
   height:100px;
   position:absolute;
   bottom:25px;
+  z-index: 1;
 }
+.android{
+  animation :fly 10s ease-out infinite both;
+  
+}
+.sword{
+  animation-name: rotate2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+.monument{
+  position:absolute;
+  bottom:60px;
+  scale:1.8;
+  z-index:-2;
+  left:567px;
+}
+.gdgchar1{
+  position:absolute;
+  bottom:-5px;
+  left:210px;
+  scale:0.7;
+}
+.gdgchar2{
+  position:absolute;
+  bottom:-5px;
+  right:190px;
+  scale:0.85;
+} 
+.speakername{
+  font-family: 'Bungee Inline';
+font-style: normal;
+font-weight: 400;
+font-size: 2em;
+text-decoration-line: underline;
+color: #000083;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+text-align: left;
+margin: 0%;
+}  
+.speakeroccupation{
+font-family: 'Bungee Inline';
+font-style: normal;
+font-weight: 400;
+font-size: 1em;
+text-align: left;
+color: #000000;
+margin:0%;
+}
+.workshoptitle{
+  font-family: 'Bungee Inline';
+font-weight: 400;
+font-size: 1.4em;
+/* identical to box height */
 
+text-decoration-line: underline;
+margin: 0% 20px;
+text-align: left;
+color: #39B54A;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.workshopdesc{
+font-family: 'Bungee Inline';
+font-size: 0.8em;
+color: #000000;
+margin: 0% 25px;
+text-align: left;
+}
+.sliderbtn{
+  height:3.5em;
+  width: 3.5em;
+  background-color: #FFC500;
+  position: relative;
+  border-radius: 10px;
+  display: inline-block;
+  margin:0 30px;
+  bottom: 3em;
+}
+.speakercard{
+    position:relative;
+    z-index:2;
+    margin:4em auto;
+    background: #FFC500;
+    border-radius: 2.5em;
+    width:40em;
+    height:20em;
+}
+.flexspeaker{
+    display:flex;
+    gap:1em;
+}
+@media only screen and (max-width: 1000px){
+  body{
+    position: fixed;
+  }
+  .gamefest{
+    height: 10em;
+  }
+  .button{
+    margin: 3em auto;
+  }
+  .detailsbloc{
+    height:300px;
+  }
+  .aboutdiv{
+    display: inline;
+  }
+  .detailsbloc{
+    height: 400px;
+  }
+  .detailsblocabout{
+    width: 90%;
+    margin: auto;
+  }
+  .detailsblocpabout{
+    width: 90%;
+    font-size: 0.8em;
+    margin: auto;
+  }
+  .gamefestdetails{
+    height: 180px;
+    margin: 50px auto;
+  }
+  .detailsbloctitle{
+    font-size: 18px;
+  }
+  .diamond{
+    display: none;
+  }
+  .star{
+    display: none;
+  }
+  .sword{
+    display: none;
+  }
+  .dash{
+    position:fixed;
+  bottom:25px;
+  height:100px;
+  right:80px;
+  }
+  .flame{
+    position: fixed;
+    right:220px;
+  }
+  .detailsblocclub{
+    width: 90%;
+    margin: auto;
+  }
+  .detailsblocpclub{
+    width: 90%;
+    font-size: 0.8em;
+    margin: auto;
+  }
+  .monument{
+    left:150px;
+    position:fixed;
+  }
+  .gdglogo{
+    position: static;
+  }
+  .grass{
+    position: fixed;
+  }
+  /* .detailsbloc{order: 2;}
+  .gamefestdetails{order:1;} */
+  .octocat{
+    position: fixed;
+  }
+  .android{
+    position: fixed;
+  }
+  .monument{
+    left: 8em;
+  }
+  .gdgchar1,.gdgchar2,.amongus2,.amongusrb,.chasing,.enemy,.helic,.itachi,.luffy,.luigi,.luigimario,.marco,.mario,.megaman,.metalslugarab,.naruto,.sasuke,.sonic,.streetfighter1,.streetfighter2,.streetfighter3,.tails,.yoshi,.zelda{
+    position: fixed;
+  }
+  .speakercard{
+    width:21em;
+    height: 35em;
+    margin: 4em auto;
+  }
+  .workshopdesc{
+    font-size: 0.8em;
+    margin: 0% 6%;
+  }
+  .workshoptitle{
+    font-size: 1.1em;
+    margin: 0% 20px;
+  }
+  .speakeroccupation{
+    font-size: 0.9em;
+    margin: 0% 6%;
+  }
+  .speakername{
+    font-size: 1.3em;
+    margin: 0% 5%;
+  }
+  .flexspeaker{
+    display: block;
+  }
 
-    
+} 
+

@@ -1,0 +1,25 @@
+.nav-btn{
+    font-size: 45px;
+    background-color: transparent;
+    border: none;
+    color:  #000083;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 0.5em 1em;
+    z-index: 1;
+}
+.left{
+    position: absolute;
+    top: 50%;
+    left: 160px;
+    z-index: 1;
+}
+.right{
+    position: absolute;
+    top: 50%;
+    right: 160px;
+    z-index: 1;
+}
