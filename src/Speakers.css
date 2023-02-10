@@ -23,3 +23,15 @@
     right: 160px;
     z-index: 1;
 }
+@media only screen and (max-width: 1000px){
+    .right, .left{
+        top: 95%;
+        margin: 0% -4%;
+    }
+    .left{
+        left:110px;
+    }
+    .right{
+        right:110px;
+    }
+}

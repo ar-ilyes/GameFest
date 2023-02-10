@@ -1,4 +1,5 @@
 import './App.css';
+import './index.css';
 import { BrowserRouter as Router,Route, Routes  } from 'react-router-dom';
 import Navbar from './Navbar';
 import Home from './Home';
@@ -9,8 +10,8 @@ import lamppost from "./images/zyro-image_lamp.png"
 import tree from "./images/zyro-image.png"
 import About from './About';
 import Club from './Club';
-import Speakers from './Speakers';
 import Agenda from './Agenda';
+import Speakers from './Speakers';
 function App() {
   return (
     <Router>

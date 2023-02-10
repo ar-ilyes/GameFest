@@ -48,4 +48,4 @@ function Home(){
     <Characters/>
     </div>
 }
-export default Home
+export default Home;
